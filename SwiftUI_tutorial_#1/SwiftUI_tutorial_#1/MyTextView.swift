@@ -12,6 +12,17 @@ struct MyTextView: View {
     @State
     private var index: Int = 0
     
+    // 데이터 연동
+
+    @Binding
+    var isActivated: Bool
+        
+    //생성자
+    init(isActivated: Binding<Bool> =
+            .constant(false)) {
+                _isActivated = isActivated
+    }
+    
     private let backgroundColors = [
         Color.red,
         Color.yellow,
@@ -29,7 +40,13 @@ struct MyTextView: View {
                 .font(.system(size: 30))
                 .fontWeight(.bold)
                 .frame(minWidth: 0, maxWidth: .infinity,
-                       minHeight: 0, maxHeight: .infinity)
+                       minHeight: 0, maxHeight: 100)
+            Text("활성화 \(String(isActivated))")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .frame(minWidth: 0, maxWidth: .infinity,
+                       minHeight: 0, maxHeight: 100)
+                .foregroundColor(self.isActivated ? Color.mint : Color.yellow)
             
             Spacer()
             
