@@ -8,9 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //@State 갑의 변화를 감지
+    @State
+    private var isActivated: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+    
+        NavigationView{
+            VStack{
+                HStack{
+                    MyVstackView()
+                    MyVstackView()
+                    MyVstackView()
+                }//HStack
+                .padding(isActivated ? 50.0 : 10.0)
+                .background(isActivated ? Color.blue : Color.black)
+                .onTapGesture {
+                    
+                    withAnimation{
+                    self.isActivated.toggle()
+                    }
+                }//Hstack
+                
+                NavigationLink(destination: MyTextView()){
+                    Text("네비게이션")
+                        .fontWeight(.bold)
+                        .padding()
+                        .font(.system(size: 40))
+                        .foregroundColor(Color.white)
+                        .background(Color.orange)
+                        .cornerRadius(30)
+                }.padding(.top, 50)
+            }//Vstack
+        }
+       
     }
 }
 

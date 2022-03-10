@@ -11,6 +11,8 @@
 		0515880527D629AA00A9E820 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515880427D629AA00A9E820 /* ContentView.swift */; };
 		0515880727D629AB00A9E820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515880627D629AB00A9E820 /* Assets.xcassets */; };
 		0515880A27D629AB00A9E820 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515880927D629AB00A9E820 /* Preview Assets.xcassets */; };
+		0515881127D9ED5F00A9E820 /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515881027D9ED5F00A9E820 /* MyTextView.swift */; };
+		0515881327D9ED8700A9E820 /* MyVstackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515881227D9ED8700A9E820 /* MyVstackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0515880427D629AA00A9E820 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0515880627D629AB00A9E820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0515880927D629AB00A9E820 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0515881027D9ED5F00A9E820 /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
+		0515881227D9ED8700A9E820 /* MyVstackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVstackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				0515880427D629AA00A9E820 /* ContentView.swift */,
 				0515880627D629AB00A9E820 /* Assets.xcassets */,
 				0515880827D629AB00A9E820 /* Preview Content */,
+				0515881027D9ED5F00A9E820 /* MyTextView.swift */,
+				0515881227D9ED8700A9E820 /* MyVstackView.swift */,
 			);
 			path = "SwiftUI_tutorial_#1";
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0515880527D629AA00A9E820 /* ContentView.swift in Sources */,
+				0515881127D9ED5F00A9E820 /* MyTextView.swift in Sources */,
+				0515881327D9ED8700A9E820 /* MyVstackView.swift in Sources */,
 				0515880327D629AA00A9E820 /* SwiftUI_tutorial__1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
