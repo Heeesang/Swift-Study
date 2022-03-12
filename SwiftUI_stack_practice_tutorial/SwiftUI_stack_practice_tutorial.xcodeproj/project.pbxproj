@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050E287627DC4E6F000174B9 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050E287527DC4E6F000174B9 /* MyCard.swift */; };
 		0515886F27DAD8E600A9E820 /* SwiftUI_stack_practice_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515886E27DAD8E600A9E820 /* SwiftUI_stack_practice_tutorialApp.swift */; };
 		0515887127DAD8E600A9E820 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515887027DAD8E600A9E820 /* ContentView.swift */; };
 		0515887327DAD8E800A9E820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515887227DAD8E800A9E820 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050E287527DC4E6F000174B9 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		0515886B27DAD8E600A9E820 /* SwiftUI_stack_practice_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_stack_practice_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0515886E27DAD8E600A9E820 /* SwiftUI_stack_practice_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_stack_practice_tutorialApp.swift; sourceTree = "<group>"; };
 		0515887027DAD8E600A9E820 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				0515887427DAD8E800A9E820 /* Preview Content */,
 				0515887C27DAD91600A9E820 /* MyProjectCard.swift */,
 				0515887E27DAE64B00A9E820 /* MyBasicCard.swift */,
+				050E287527DC4E6F000174B9 /* MyCard.swift */,
 			);
 			path = SwiftUI_stack_practice_tutorial;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				0515887D27DAD91600A9E820 /* MyProjectCard.swift in Sources */,
 				0515887127DAD8E600A9E820 /* ContentView.swift in Sources */,
 				0515887F27DAE64B00A9E820 /* MyBasicCard.swift in Sources */,
+				050E287627DC4E6F000174B9 /* MyCard.swift in Sources */,
 				0515886F27DAD8E600A9E820 /* SwiftUI_stack_practice_tutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
