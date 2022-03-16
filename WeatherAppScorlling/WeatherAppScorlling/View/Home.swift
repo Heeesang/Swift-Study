@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var offset: CGFloat = 0
+    var topEdge: CGFloat
+    
     var body: some View {
         
         ZStack{
@@ -48,6 +52,10 @@ struct Home: View {
                             .foregroundColor(.white)
                             .shadow(radius: 5)
                     }
+                    .offset(y: -offset)
+                    .offset(y: offset > 0 ? (offset / UIScreen.main.bounds.width) *
+                            100:0)
+                    .offset(y: getTitleOffseet())
                     
                     //Custom Data View
                     VStack(spacing: 8){
@@ -84,16 +92,39 @@ struct Home: View {
                 }
                 .padding(.top,25)
                 .padding([.horizontal, .bottom])
-            }
+                //getting offset
+                .overlay(
+                
+                    GeometryReader{proxy ->  Color in
+                        
+                        let minY = proxy.frame(in: .global).minY
+                        
+                        DispatchQueue.main.async {
+                            self.offset = minY
+                            
+                        }
+                        
+                        return Color.clear
+                        
+                }
+            )
         }
-        
-        
     }
 }
+    func getTitleOffseet()-> CGFloat{
+        
+        let progress = offset / 120
+        
+        let newOffset = (progress <= 1.0 ? progress : 1) * 20
+        
+        return newOffset
+    }
+    
+    
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        ContentView()
     }
 }
  
@@ -124,5 +155,6 @@ struct ForecastView: View {
             
         }
         .padding(.horizontal,10)
+    }
     }
 }
