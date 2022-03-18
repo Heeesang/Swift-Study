@@ -12,6 +12,10 @@ struct CustomStackView<Title: View, Content: View>: View {
     var titleView: Title
     var contentView: Content
     
+    //Offset...
+    @State var topOffset: CGFloat = 0
+    @State var bottomOffset: CGFloat = 0
+    
     init(@ViewBuilder titleView: @escaping ()->Title, @ViewBuilder contentView: @escaping ()-> Content){
     
         self.contentView = contentView()
@@ -40,6 +44,23 @@ struct CustomStackView<Title: View, Content: View>: View {
 
         }
         .colorScheme(.dark)
+        .cornerRadius(12)
+        // Stopping View
+        .offset(y: topOffset >= 120 ? 0 : -topOffset + 120)
+        .background(
+            
+            GeometryReader{proxy -> Color in
+                
+                let minY = proxy.frame(in: .global).minY
+                
+                DispatchQueue.main.async {
+                    self.topOffset = minY
+                }
+                
+                return Color.clear
+            }
+            
+        )
         
     }
 }

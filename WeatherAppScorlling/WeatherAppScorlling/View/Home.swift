@@ -42,15 +42,20 @@ struct Home: View {
                             .font(.system(size: 35))
                             .foregroundColor(.white)
                             .shadow(radius: 5)
+                            .opacity(getTitleOpactiy())
+                        
                         Text("Cloudy")
                             .foregroundStyle(.secondary)
                             .foregroundColor(.white)
                             .shadow(radius: 5)
-                            
+                            .opacity(getTitleOpactiy())
+                        
                         Text("H: 103° L: 105°")
                             .foregroundStyle(.primary)
                             .foregroundColor(.white)
                             .shadow(radius: 5)
+                            .opacity(getTitleOpactiy())
+                        
                     }
                     .offset(y: -offset)
                     .offset(y: offset > 0 ? (offset / UIScreen.main.bounds.width) *
@@ -61,29 +66,32 @@ struct Home: View {
                     VStack(spacing: 8){
                         
                         //Custom Stack
-                        CustomStackView{
-                            
-                            Label{
+                        
+                        ForEach(1...5,id: \.self){_ in
+                            CustomStackView{
                                 
-                                Text("Hourly Forecast")
-                                
-                            }icon:{
-                                Image(systemName: "clock")
-                            }
-                            
-                        } contentView: {
-                            ScrollView(.horizontal, showsIndicators: false){
-                                
-                                HStack(spacing: 15){
+                                Label{
                                     
-                                    ForecastView(time: "12 PM",celcius: 94, image: "sun.min")
-                                    ForecastView(time: "1 PM",celcius: 95, image: "sun.min")
-                                    ForecastView(time: "2 PM",celcius: 96, image: "sun.min")
-                                    ForecastView(time: "3 PM",celcius: 97, image: "cloud.sun")
-                                    ForecastView(time: "4 PM",celcius: 98, image: "sun.haze")
+                                    Text("Hourly Forecast")
                                     
+                                }icon:{
+                                    Image(systemName: "clock")
                                 }
                                 
+                            } contentView: {
+                                ScrollView(.horizontal, showsIndicators: false){
+                                    
+                                    HStack(spacing: 15){
+                                        
+                                        ForecastView(time: "12 PM",celcius: 94, image: "sun.min")
+                                        ForecastView(time: "1 PM",celcius: 95, image: "sun.min")
+                                        ForecastView(time: "2 PM",celcius: 96, image: "sun.min")
+                                        ForecastView(time: "3 PM",celcius: 97, image: "cloud.sun")
+                                        ForecastView(time: "4 PM",celcius: 98, image: "sun.haze")
+                                        
+                                    }
+                                    
+                                }
                             }
                         }
                     
@@ -91,6 +99,7 @@ struct Home: View {
                     
                 }
                 .padding(.top,25)
+                .padding(.top,topEdge)
                 .padding([.horizontal, .bottom])
                 //getting offset
                 .overlay(
@@ -101,7 +110,6 @@ struct Home: View {
                         
                         DispatchQueue.main.async {
                             self.offset = minY
-                            
                         }
                         
                         return Color.clear
@@ -111,13 +119,31 @@ struct Home: View {
         }
     }
 }
+    
+    func getTitleOpactiy() ->CGFloat{
+        
+        let titleOffset = -getTitleOffseet()
+        
+        let progress = titleOffset / 20
+        
+        let opacity = 1 - progress
+        
+        return opacity
+        
+    }
+    
     func getTitleOffseet()-> CGFloat{
         
-        let progress = offset / 120
+        if offset < 0 {
+            
+            let progress = -offset / 120
+            
+            let newOffset = (progress <= 1.0 ? progress : 1) * 20
+            
+            return -newOffset
+        }
         
-        let newOffset = (progress <= 1.0 ? progress : 1) * 20
-        
-        return newOffset
+        return 0
     }
     
     
