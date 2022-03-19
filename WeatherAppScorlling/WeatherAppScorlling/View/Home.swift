@@ -66,35 +66,37 @@ struct Home: View {
                     VStack(spacing: 8){
                         
                         //Custom Stack
-                        
-                        ForEach(1...5,id: \.self){_ in
-                            CustomStackView{
+                        CustomStackView{
+                            
+                            Label{
                                 
-                                Label{
-                                    
-                                    Text("Hourly Forecast")
-                                    
-                                }icon:{
-                                    Image(systemName: "clock")
-                                }
+                                Text("Hourly Forecast")
                                 
-                            } contentView: {
-                                ScrollView(.horizontal, showsIndicators: false){
-                                    
-                                    HStack(spacing: 15){
-                                        
-                                        ForecastView(time: "12 PM",celcius: 94, image: "sun.min")
-                                        ForecastView(time: "1 PM",celcius: 95, image: "sun.min")
-                                        ForecastView(time: "2 PM",celcius: 96, image: "sun.min")
-                                        ForecastView(time: "3 PM",celcius: 97, image: "cloud.sun")
-                                        ForecastView(time: "4 PM",celcius: 98, image: "sun.haze")
-                                        
-                                    }
-                                    
-                                }
+                            }icon:{
+                                Image(systemName: "clock")
                             }
+                            
+                        }
+                            contentView: {
+                            
+                                
+                            ScrollView(.horizontal, showsIndicators: false){
+                                
+                                HStack(spacing: 15){
+                                    
+                                    ForecastView(time: "12 PM",celcius: 94, image: "sun.min")
+                                    ForecastView(time: "1 PM",celcius: 95, image: "sun.min")
+                                    ForecastView(time: "2 PM",celcius: 96, image: "sun.min")
+                                    ForecastView(time: "3 PM",celcius: 97, image: "cloud.sun")
+                                    ForecastView(time: "4 PM",celcius: 98, image: "sun.haze")
+                                    
+                                }
+                                
+                            }
+                                    }
                         }
                     
+                        
                     }
                     
                 }
@@ -184,3 +186,4 @@ struct ForecastView: View {
     }
     }
 }
+
