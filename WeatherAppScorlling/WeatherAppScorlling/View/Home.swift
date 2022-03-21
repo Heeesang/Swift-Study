@@ -93,10 +93,9 @@ struct Home: View {
                                 }
                                 
                             }
-                                    }
-                        }
-                    
                         
+                            }
+                        WeatherDataView()
                     }
                     
                 }
