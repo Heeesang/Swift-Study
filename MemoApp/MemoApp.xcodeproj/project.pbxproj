@@ -13,7 +13,7 @@
 		05B7EAE727E8BAC200F8433F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B7EAE527E8BAC200F8433F /* Main.storyboard */; };
 		05B7EAEA27E8BAC200F8433F /* MemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05B7EAE827E8BAC200F8433F /* MemoApp.xcdatamodeld */; };
 		05B7EAEC27E8BAC400F8433F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B7EAEB27E8BAC400F8433F /* Assets.xcassets */; };
-		05B7EAEF27E8BAC400F8433F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B7EAED27E8BAC400F8433F /* LaunchScreen.storyboard */; };
+		05B7EAEF27E8BAC400F8433F /*  .storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B7EAED27E8BAC400F8433F /*  .storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		05B7EAE627E8BAC200F8433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05B7EAE927E8BAC200F8433F /* MemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemoApp.xcdatamodel; sourceTree = "<group>"; };
 		05B7EAEB27E8BAC400F8433F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		05B7EAEE27E8BAC400F8433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05B7EAEE27E8BAC400F8433F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/ .storyboard"; sourceTree = "<group>"; };
 		05B7EAF027E8BAC400F8433F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 				05B7EAE327E8BAC200F8433F /* ViewController.swift */,
 				05B7EAE527E8BAC200F8433F /* Main.storyboard */,
 				05B7EAEB27E8BAC400F8433F /* Assets.xcassets */,
-				05B7EAED27E8BAC400F8433F /* LaunchScreen.storyboard */,
+				05B7EAED27E8BAC400F8433F /*  .storyboard */,
 				05B7EAF027E8BAC400F8433F /* Info.plist */,
 				05B7EAE827E8BAC200F8433F /* MemoApp.xcdatamodeld */,
 			);
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B7EAEF27E8BAC400F8433F /* LaunchScreen.storyboard in Resources */,
+				05B7EAEF27E8BAC400F8433F /*  .storyboard in Resources */,
 				05B7EAEC27E8BAC400F8433F /* Assets.xcassets in Resources */,
 				05B7EAE727E8BAC200F8433F /* Main.storyboard in Resources */,
 			);
@@ -159,12 +159,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		05B7EAED27E8BAC400F8433F /* LaunchScreen.storyboard */ = {
+		05B7EAED27E8BAC400F8433F /*  .storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				05B7EAEE27E8BAC400F8433F /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = " .storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
