@@ -15,7 +15,7 @@ struct DayForecast: Identifiable{
 }
 
 var forecast = [
-    DayForecast(day: "Today", farenheit: 94, image: "sun.min"),
+    DayForecast(day: "Today", farenheit: 570, image: "sun.min"),
     DayForecast(day: "Wed", farenheit: 90, image: "cloud.sun"),
     DayForecast(day: "Tue", farenheit: 98, image: "cloud.sun.bolt"),
     DayForecast(day: "Thu", farenheit: 99, image: "sun.max"),

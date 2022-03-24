@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A5F8B227EC8AC200CF5C54 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5F8B127EC8AC200CF5C54 /* MemoListTableViewController.swift */; };
 		05B7EAE027E8BAC200F8433F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7EADF27E8BAC200F8433F /* AppDelegate.swift */; };
 		05B7EAE227E8BAC200F8433F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7EAE127E8BAC200F8433F /* SceneDelegate.swift */; };
 		05B7EAE727E8BAC200F8433F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B7EAE527E8BAC200F8433F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A5F8B127EC8AC200CF5C54 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		05B7EADC27E8BAC200F8433F /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B7EADF27E8BAC200F8433F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B7EAE127E8BAC200F8433F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				05B7EAED27E8BAC400F8433F /*  .storyboard */,
 				05B7EAF027E8BAC400F8433F /* Info.plist */,
 				05B7EAE827E8BAC200F8433F /* MemoApp.xcdatamodeld */,
+				05A5F8B127EC8AC200CF5C54 /* MemoListTableViewController.swift */,
 			);
 			path = MemoApp;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				05B7EAE027E8BAC200F8433F /* AppDelegate.swift in Sources */,
 				05B7EAE227E8BAC200F8433F /* SceneDelegate.swift in Sources */,
+				05A5F8B227EC8AC200CF5C54 /* MemoListTableViewController.swift in Sources */,
 				05B7EAEA27E8BAC200F8433F /* MemoApp.xcdatamodeld in Sources */,
 				05B7EAF827EB458000F8433F /* Model.swift in Sources */,
 			);
