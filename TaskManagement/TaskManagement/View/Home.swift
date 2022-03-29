@@ -15,16 +15,40 @@ struct Home: View {
             LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]){
                 
                 Section {
-                    
+                      
                     //current week
                     ScrollView(.horizontal, showsIndicators: false){
+                        
                         HStack(spacing: 10){
-                            ForEach(taskModel.currentweek,id:\.self){ day in
+                        
+                            ForEach(taskModel.currentWeek,id:\.self){ day in
+                           
+                                VStack(spacing: 10){
+                                Text (taskModel.extractDate(date: day, format: "dd"))
+                                    .font(.system(size: 15))
+                                    .fontWeight(.semibold)
+                           
+                                Text (taskModel.extractDate(date: day, format: "EEE"))
+                                    .font(.system(size: 14))
+                                    
+                                Circle()
+                                        .fill(.white)
+                                        .frame(width: 8, height: 8)
+                                        .opacity(taskModel.isToday(date: day) ? 1:0)
+                                }
+                                .foregroundColor(.white)
+                                .frame(width: 45, height:90)
+                                .background(
                                 
-                                Text (day.formatted(date: .abbreviated, time:.omitted))
-                                
+                                    ZStack{
+                                        Capsule()
+                                            .fill(.black)
+                                    }
+                                    
+                                )
                             }
                         }
+                        .padding(.horizontal)
                     }
                     
                 }header: {

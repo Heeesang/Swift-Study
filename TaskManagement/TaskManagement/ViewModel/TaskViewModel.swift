@@ -24,7 +24,10 @@ class TaskViewModel: ObservableObject {
     ]
     
     // Current week days
-    @Published var currentweek: [Date] = []
+    @Published var currentWeek: [Date] = []
+    
+    //Current Day
+    @Published var currentDay: Date = Date()
     
     init(){
         fetchCurrentWeek()
@@ -45,9 +48,24 @@ class TaskViewModel: ObservableObject {
         (1...7).forEach{ day in
             
             if let weekday = calendar.date(byAdding: .day,value: day, to: firstWeekDay){ 
-                currentweek.append(weekday)
+                currentWeek.append(weekday)
             }
         }
     }
+    //Extracting Date
+    func extractDate(date: Date, format: String) -> String{
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = format
+        
+        return formatter.string(from: date)
+    }
     
+    //Checking
+    func isToday(date:Date)->Bool{
+        
+        let calendar = Calendar.current
+        
+        return calendar.isDate(currentDay, inSameDayAs: date)
+    }
 }
