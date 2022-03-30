@@ -8,7 +8,7 @@
 import SwiftUI
 
 class TaskViewModel: ObservableObject {
-    
+    let unixTime = Date().timeIntervalSince1970
 //Sample Task
     @Published var storedTasks: [Task] = [
         
@@ -19,7 +19,7 @@ class TaskViewModel: ObservableObject {
         Task(taskTitle: "Team party", taskDescription: "Make fun and with team mates", taskDate: .init(timeIntervalSince1970: 1641661897)),
         Task(taskTitle: "Client Meeting", taskDescription: "Explain project to client", taskDate: .init(timeIntervalSince1970: 1641641897)),
         Task(taskTitle: "Next Project", taskDescription: "Discuss next project with team", taskDate: .init(timeIntervalSince1970: 1641677897)),
-        Task(taskTitle: "App Proposal", taskDescription: "Meet client for next App Proposal", taskDate: .init(timeIntervalSince1970: 1641681497)),
+        Task(taskTitle: "App Proposal", taskDescription: "Meet client for next App Proposal", taskDate: .init(timeIntervalSince1970: Date().timeIntervalSince1970)),
         
     ]
     
@@ -29,10 +29,32 @@ class TaskViewModel: ObservableObject {
     //Current Day
     @Published var currentDay: Date = Date()
     
+    //Filtering Today Task
+    @Published var filteredTasks: [Task]?
+    
     init(){
         fetchCurrentWeek()
+        filterTodayTask()
     }
     
+    func filterTodayTask(){
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            
+            let calendar = Calendar.current
+            
+            let filtered = self.storedTasks.filter{
+                return calendar.isDate($0.taskDate, inSameDayAs: Date())
+            }
+            
+            DispatchQueue.main.async {
+                withAnimation{
+                    self.filteredTasks = filtered 
+                }
+            }
+        }
+        
+    }
     
     func fetchCurrentWeek(){
         
@@ -52,6 +74,7 @@ class TaskViewModel: ObservableObject {
             }
         }
     }
+    
     //Extracting Date
     func extractDate(date: Date, format: String) -> String{
         let formatter = DateFormatter()

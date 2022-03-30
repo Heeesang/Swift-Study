@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
+    @Namespace var animation
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             
@@ -36,29 +38,118 @@ struct Home: View {
                                         .frame(width: 8, height: 8)
                                         .opacity(taskModel.isToday(date: day) ? 1:0)
                                 }
-                                .foregroundColor(.white)
+                                .foregroundStyle(taskModel.isToday(date: day) ? .primary : .secondary)
+                                .foregroundColor(taskModel.isToday(date: day) ? .white : .black)
                                 .frame(width: 45, height:90)
                                 .background(
                                 
                                     ZStack{
-                                        Capsule()
-                                            .fill(.black)
+                                        if taskModel.isToday(date: day){
+                                            Capsule()
+                                                .fill(.black)
+                                                .matchedGeometryEffect(id: "CURRENTDAY", in: animation)
+                                        }
                                     }
                                     
                                 )
+                                .contentShape(Capsule())
+                                .onTapGesture {
+                                    withAnimation{
+                                        taskModel.currentDay = day
+                                    }
+                                }
                             }
                         }
                         .padding(.horizontal)
                     }
+                    
+                    TasksView()
                     
                 }header: {
                     HeaderView()
                 }
                 
             }
+        }
+        .ignoresSafeArea(.container, edges: .top)
+    }
+    
+    func TasksView()->some View{
+        
+        LazyVStack(spacing: 18){
+            
+            if let tasks = taskModel.filteredTasks{
+                if tasks.isEmpty{
+                    
+                    Text("No tasks found")
+                        .font(.system(size: 16))
+                        .fontWeight(.light)
+                        .offset(y: 100)
+                }
+                else{
+                    ForEach(tasks){task in
+                        TaskCardView(task: task)
+                    }
+                }
+            }
+            else{
+                ProgressView()
+                    .offset(y: 100)
+            }
+        }
+        .padding()
+        .padding(.top)
+        
+        .onChange(of: taskModel.currentDay){ newValue in
+            taskModel.filterTodayTask()
             
         }
     }
+    
+    func TaskCardView(task: Task)-> some View {
+        HStack(alignment: .top, spacing: 30){
+            VStack(spacing: 10){
+                Circle()
+                    .fill(.black)
+                    .frame(width: 15, height: 15)
+                    .background(
+                        
+                        Circle()
+                            .stroke(.black,lineWidth: 1)
+                            .padding(-3)
+                    )
+                Rectangle()
+                    .fill(.black)
+                    .frame(width: 3)
+            }
+            
+            VStack{
+                
+                HStack(alignment: .top, spacing: 10){
+                    VStack(alignment: .leading, spacing: 12){
+                        Text(task.taskTitle)
+                            .font(.title2.bold())
+                        
+                        Text(task.taskDescription)
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                    }
+                    .hLeading()
+                    
+                    Text(task.taskDate.formatted(date: .omitted, time: .shortened))
+                }
+            }
+            .foregroundColor(.white)
+            .padding()
+            .hLeading()
+            .background(
+                Color.black
+                    .cornerRadius(25)
+            )
+        }
+        .hLeading()
+    }
+    
 
     func HeaderView()-> some View {
         
