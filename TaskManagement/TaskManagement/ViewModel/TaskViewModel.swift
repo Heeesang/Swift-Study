@@ -91,4 +91,15 @@ class TaskViewModel: ObservableObject {
         
         return calendar.isDate(currentDay, inSameDayAs: date)
     }
+    
+    func isCurrentHour(date: Date)->Bool{
+        
+        let calendar = Calendar.current
+        
+        let hour = calendar.component(.hour, from: date)
+        let currentHour =  calendar.component(.hour, from: Date())
+        
+        return hour == currentHour
+    }
+    
 }

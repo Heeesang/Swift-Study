@@ -138,28 +138,47 @@ struct Home: View {
                     
                     Text(task.taskDate.formatted(date: .omitted, time: .shortened))
                 }
-            
-                HStack(spacing: 0){
-                    HStack(spacing: -10){
-                        
-                        ForEach(["User1","User2","User3"], id: \.self){user in
+                
+                if taskModel.isCurrentHour(date: task.taskDate){
+                    HStack(spacing: 0){
+                        HStack(spacing: -10){
                             
-                            Image(user)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 45, height: 45)
-                                .clipShape(Circle())
+                            ForEach(["User1","User2","User3"], id: \.self){user in
+                                
+                                Image(user)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 45, height: 45)
+                                    .clipShape(Circle())
+                                    .background(
+                                        
+                                        Circle()
+                                            .stroke(.black,lineWidth: 5)
+                                        
+                                    )
+                            }
+                        }
+                        .hLeading()
+                        
+                        Button {
+                            
+                        }label: {
+                            Image(systemName: "checkmark")
+                                .foregroundStyle(.black)
+                                .padding(10)
+                                .background(Color.white,in: RoundedRectangle(cornerRadius: 10))
                         }
                     }
-                    .hLeading()
+                    .padding(0)
                 }
             }
-            .foregroundColor(.white)
-            .padding()
+            .foregroundColor(taskModel.isCurrentHour(date: task.taskDate) ? .white : .black)
+            .padding(taskModel.isCurrentHour(date: task.taskDate) ? 15 : 0)
             .hLeading()
             .background(
                 Color.black
                     .cornerRadius(25)
+                    .opacity(taskModel.isCurrentHour(date: task.taskDate) ? 1:0)
             )
         }
         .hLeading()
