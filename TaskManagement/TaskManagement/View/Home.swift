@@ -138,6 +138,21 @@ struct Home: View {
                     
                     Text(task.taskDate.formatted(date: .omitted, time: .shortened))
                 }
+            
+                HStack(spacing: 0){
+                    HStack(spacing: -10){
+                        
+                        ForEach(["User1","User2","User3"], id: \.self){user in
+                            
+                            Image(user)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 45, height: 45)
+                                .clipShape(Circle())
+                        }
+                    }
+                    .hLeading()
+                }
             }
             .foregroundColor(.white)
             .padding()
