@@ -12,13 +12,13 @@ struct MainTabView: View {
         TabView{
             Text("Home")
                 .tabItem{
-                    Image(systemName: "house.fill")
-                    Text("Home")
+                    Tab.home.imageItem
+                    Tab.home.tabTextItem
                 }
             Text("Other")
                 .tabItem{
-                    Image(systemName: "ellipsis")
-                    Text("Other")
+                    Tab.other.imageItem
+                    Tab.other.tabTextItem
                 }
         }
     }
