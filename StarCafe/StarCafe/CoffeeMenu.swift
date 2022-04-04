@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct CoffeeMenu {
+struct CoffeeMenu: Identifiable {
     let image: Image
     let name: String
+    
+    let id = UUID()
     
     static let sample: [CoffeeMenu] = [
         CoffeeMenu(image: Image("coffee"), name: "아이스 아메리카노"),
