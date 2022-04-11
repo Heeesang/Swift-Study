@@ -53,8 +53,6 @@
 			children = (
 				05B825BC2803C61900EC2F1B /* Home */,
 				05B825B527FB2E3400EC2F1B /* Tab */,
-				05B825B127FAC01300EC2F1B /* MenuSuggetionSectionView.swift */,
-				05B825B627FB2E5500EC2F1B /* EventSectionView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -71,6 +69,8 @@
 		05B825BC2803C61900EC2F1B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				05B825B627FB2E5500EC2F1B /* EventSectionView.swift */,
+				05B825B127FAC01300EC2F1B /* MenuSuggetionSectionView.swift */,
 				05B825BA2803C57300EC2F1B /* HomeView.swift */,
 				05B825BD2803C62C00EC2F1B /* HomeheaderView.swift */,
 			);

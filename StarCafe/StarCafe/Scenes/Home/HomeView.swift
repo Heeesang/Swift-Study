@@ -10,11 +10,10 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
-            VStack(spacing: 40){
                 HomeheaderView().padding(.top, 30)
                 MenuSuggetionSectionView()
+                Spacer(minLength: 32.0)
                 EventSectionView()
-            }
         }
     }
 }
