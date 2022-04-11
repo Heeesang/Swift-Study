@@ -12,6 +12,9 @@
 		05B825B427FAC08D00EC2F1B /* CoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825B327FAC08D00EC2F1B /* CoffeeMenu.swift */; };
 		05B825B727FB2E5500EC2F1B /* EventSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825B627FB2E5500EC2F1B /* EventSectionView.swift */; };
 		05B825B927FB2EF500EC2F1B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825B827FB2EF500EC2F1B /* Event.swift */; };
+		05B825BB2803C57300EC2F1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825BA2803C57300EC2F1B /* HomeView.swift */; };
+		05B825BE2803C62C00EC2F1B /* HomeheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825BD2803C62C00EC2F1B /* HomeheaderView.swift */; };
+		05B825C0280440CE00EC2F1B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825BF280440CE00EC2F1B /* User.swift */; };
 		05C2125327F6A08000AC557F /* StarCafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2125227F6A08000AC557F /* StarCafeApp.swift */; };
 		05C2125527F6A08000AC557F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2125427F6A08000AC557F /* MainTabView.swift */; };
 		05C2125727F6A08200AC557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C2125627F6A08200AC557F /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		05B825B327FAC08D00EC2F1B /* CoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenu.swift; sourceTree = "<group>"; };
 		05B825B627FB2E5500EC2F1B /* EventSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionView.swift; sourceTree = "<group>"; };
 		05B825B827FB2EF500EC2F1B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		05B825BA2803C57300EC2F1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		05B825BD2803C62C00EC2F1B /* HomeheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeheaderView.swift; sourceTree = "<group>"; };
+		05B825BF280440CE00EC2F1B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05C2124F27F6A08000AC557F /* StarCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2125227F6A08000AC557F /* StarCafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCafeApp.swift; sourceTree = "<group>"; };
 		05C2125427F6A08000AC557F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 		05B825B027FABFF100EC2F1B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				05B825BC2803C61900EC2F1B /* Home */,
 				05B825B527FB2E3400EC2F1B /* Tab */,
 				05B825B127FAC01300EC2F1B /* MenuSuggetionSectionView.swift */,
 				05B825B627FB2E5500EC2F1B /* EventSectionView.swift */,
@@ -61,11 +68,21 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
+		05B825BC2803C61900EC2F1B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05B825BA2803C57300EC2F1B /* HomeView.swift */,
+				05B825BD2803C62C00EC2F1B /* HomeheaderView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		05C2124627F6A07F00AC557F = {
 			isa = PBXGroup;
 			children = (
 				05B825B327FAC08D00EC2F1B /* CoffeeMenu.swift */,
 				05B825B827FB2EF500EC2F1B /* Event.swift */,
+				05B825BF280440CE00EC2F1B /* User.swift */,
 				05C2125127F6A08000AC557F /* StarCafe */,
 				05C2125027F6A08000AC557F /* Products */,
 			);
@@ -173,7 +190,10 @@
 				05C2125527F6A08000AC557F /* MainTabView.swift in Sources */,
 				05B825B427FAC08D00EC2F1B /* CoffeeMenu.swift in Sources */,
 				05C2125327F6A08000AC557F /* StarCafeApp.swift in Sources */,
+				05B825BE2803C62C00EC2F1B /* HomeheaderView.swift in Sources */,
+				05B825BB2803C57300EC2F1B /* HomeView.swift in Sources */,
 				05B825B927FB2EF500EC2F1B /* Event.swift in Sources */,
+				05B825C0280440CE00EC2F1B /* User.swift in Sources */,
 				05B825B227FAC01300EC2F1B /* MenuSuggetionSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
