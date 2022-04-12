@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B707CF28051B000045BF22 /* OtherView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B707CE28051B000045BF22 /* OtherView .swift */; };
 		05B825AF27FA98E700EC2F1B /* TabEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825AE27FA98E700EC2F1B /* TabEnum.swift */; };
 		05B825B227FAC01300EC2F1B /* MenuSuggetionSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825B127FAC01300EC2F1B /* MenuSuggetionSectionView.swift */; };
 		05B825B427FAC08D00EC2F1B /* CoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B825B327FAC08D00EC2F1B /* CoffeeMenu.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B707CE28051B000045BF22 /* OtherView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OtherView .swift"; sourceTree = "<group>"; };
 		05B825AE27FA98E700EC2F1B /* TabEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEnum.swift; sourceTree = "<group>"; };
 		05B825B127FAC01300EC2F1B /* MenuSuggetionSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSuggetionSectionView.swift; sourceTree = "<group>"; };
 		05B825B327FAC08D00EC2F1B /* CoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenu.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				05B825BC2803C61900EC2F1B /* Home */,
 				05B825B527FB2E3400EC2F1B /* Tab */,
+				05B707CE28051B000045BF22 /* OtherView .swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				05C2125527F6A08000AC557F /* MainTabView.swift in Sources */,
 				05B825B427FAC08D00EC2F1B /* CoffeeMenu.swift in Sources */,
 				05C2125327F6A08000AC557F /* StarCafeApp.swift in Sources */,
+				05B707CF28051B000045BF22 /* OtherView .swift in Sources */,
 				05B825BE2803C62C00EC2F1B /* HomeheaderView.swift in Sources */,
 				05B825BB2803C57300EC2F1B /* HomeView.swift in Sources */,
 				05B825B927FB2EF500EC2F1B /* Event.swift in Sources */,
