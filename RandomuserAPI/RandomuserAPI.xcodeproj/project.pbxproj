@@ -16,6 +16,7 @@
 		051808302807997E00278FC2 /* ProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518082F2807997E00278FC2 /* ProfileImgView.swift */; };
 		051808322807C19E00278FC2 /* RandomuserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051808312807C19E00278FC2 /* RandomuserItemView.swift */; };
 		051808352807E1B400278FC2 /* RandomUserdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051808342807E1B400278FC2 /* RandomUserdata.swift */; };
+		051808382808321A00278FC2 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051808372808321A00278FC2 /* RandomUserViewModel.swift */; };
 		54C6177A5CFB1AA6D1DFF0FD /* Pods_RandomuserAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F082278DA56C318873D52C74 /* Pods_RandomuserAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		0518082F2807997E00278FC2 /* ProfileImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgView.swift; sourceTree = "<group>"; };
 		051808312807C19E00278FC2 /* RandomuserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomuserItemView.swift; sourceTree = "<group>"; };
 		051808342807E1B400278FC2 /* RandomUserdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserdata.swift; sourceTree = "<group>"; };
+		051808372808321A00278FC2 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 		0766FF9713A1045D9CEB1511 /* Pods-RandomuserAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomuserAPI.debug.xcconfig"; path = "Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		6E3D9398C076976462EB295E /* Pods-RandomuserAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomuserAPI.release.xcconfig"; path = "Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI.release.xcconfig"; sourceTree = "<group>"; };
 		F082278DA56C318873D52C74 /* Pods_RandomuserAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomuserAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +70,7 @@
 		0518081A2807982700278FC2 /* RandomuserAPI */ = {
 			isa = PBXGroup;
 			children = (
-				051808332807E19900278FC2 /* Model */,
+				051808332807E19900278FC2 /* data */,
 				0518082E2807996400278FC2 /* UI */,
 				0518081B2807982700278FC2 /* RandomuserAPIApp.swift */,
 				0518081D2807982700278FC2 /* ContentView.swift */,
@@ -95,12 +97,13 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		051808332807E19900278FC2 /* Model */ = {
+		051808332807E19900278FC2 /* data */ = {
 			isa = PBXGroup;
 			children = (
 				051808342807E1B400278FC2 /* RandomUserdata.swift */,
+				051808372808321A00278FC2 /* RandomUserViewModel.swift */,
 			);
-			path = Model;
+			path = data;
 			sourceTree = "<group>";
 		};
 		09A8D2651A831E0F0A2E5414 /* Pods */ = {
@@ -245,6 +248,7 @@
 				051808302807997E00278FC2 /* ProfileImgView.swift in Sources */,
 				051808322807C19E00278FC2 /* RandomuserItemView.swift in Sources */,
 				0518081E2807982700278FC2 /* ContentView.swift in Sources */,
+				051808382808321A00278FC2 /* RandomUserViewModel.swift in Sources */,
 				0518081C2807982700278FC2 /* RandomuserAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
