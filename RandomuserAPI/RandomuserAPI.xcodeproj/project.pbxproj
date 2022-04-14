@@ -14,6 +14,8 @@
 		0518082B2807992800278FC2 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0518082A2807992800278FC2 /* URLImage */; };
 		0518082D2807992800278FC2 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 0518082C2807992800278FC2 /* URLImageStore */; };
 		051808302807997E00278FC2 /* ProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0518082F2807997E00278FC2 /* ProfileImgView.swift */; };
+		051808322807C19E00278FC2 /* RandomuserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051808312807C19E00278FC2 /* RandomuserItemView.swift */; };
+		54C6177A5CFB1AA6D1DFF0FD /* Pods_RandomuserAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F082278DA56C318873D52C74 /* Pods_RandomuserAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		0518081F2807982800278FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		051808222807982800278FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0518082F2807997E00278FC2 /* ProfileImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgView.swift; sourceTree = "<group>"; };
+		051808312807C19E00278FC2 /* RandomuserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomuserItemView.swift; sourceTree = "<group>"; };
+		0766FF9713A1045D9CEB1511 /* Pods-RandomuserAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomuserAPI.debug.xcconfig"; path = "Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3D9398C076976462EB295E /* Pods-RandomuserAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomuserAPI.release.xcconfig"; path = "Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI.release.xcconfig"; sourceTree = "<group>"; };
+		F082278DA56C318873D52C74 /* Pods_RandomuserAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomuserAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			files = (
 				0518082D2807992800278FC2 /* URLImageStore in Frameworks */,
 				0518082B2807992800278FC2 /* URLImage in Frameworks */,
+				54C6177A5CFB1AA6D1DFF0FD /* Pods_RandomuserAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,8 @@
 			children = (
 				0518081A2807982700278FC2 /* RandomuserAPI */,
 				051808192807982700278FC2 /* Products */,
+				09A8D2651A831E0F0A2E5414 /* Pods */,
+				485002304D7FA7830288197D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +87,27 @@
 			isa = PBXGroup;
 			children = (
 				0518082F2807997E00278FC2 /* ProfileImgView.swift */,
+				051808312807C19E00278FC2 /* RandomuserItemView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		09A8D2651A831E0F0A2E5414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0766FF9713A1045D9CEB1511 /* Pods-RandomuserAPI.debug.xcconfig */,
+				6E3D9398C076976462EB295E /* Pods-RandomuserAPI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		485002304D7FA7830288197D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F082278DA56C318873D52C74 /* Pods_RandomuserAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 051808262807982800278FC2 /* Build configuration list for PBXNativeTarget "RandomuserAPI" */;
 			buildPhases = (
+				1FB9FC06764C11BBA9432560 /* [CP] Check Pods Manifest.lock */,
 				051808142807982700278FC2 /* Sources */,
 				051808152807982700278FC2 /* Frameworks */,
 				051808162807982700278FC2 /* Resources */,
+				B24EF98E14056F6FEC1F9E39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,12 +184,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FB9FC06764C11BBA9432560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomuserAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24EF98E14056F6FEC1F9E39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomuserAPI/Pods-RandomuserAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		051808142807982700278FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				051808302807997E00278FC2 /* ProfileImgView.swift in Sources */,
+				051808322807C19E00278FC2 /* RandomuserItemView.swift in Sources */,
 				0518081E2807982700278FC2 /* ContentView.swift in Sources */,
 				0518081C2807982700278FC2 /* RandomuserAPIApp.swift in Sources */,
 			);
@@ -286,6 +359,7 @@
 		};
 		051808272807982800278FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0766FF9713A1045D9CEB1511 /* Pods-RandomuserAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +388,7 @@
 		};
 		051808282807982800278FC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3D9398C076976462EB295E /* Pods-RandomuserAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

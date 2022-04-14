@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(0...100,id: \.self){index in
+            RandomuserItemView()
+        }
     }
 }
 
