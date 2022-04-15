@@ -13,11 +13,22 @@ class TestViewController: UIViewController, UITableViewDelegate, UITableViewData
     let myTableView: UITableView = UITableView()
     let items: [String] = ["곽희상", "swift", "ios"]
     
+    func configureTableView() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(myTableView)
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        myTableView.translatesAutoresizingMaskIntoConstraints = false
+        myTableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
+        myTableView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
+        myTableView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
+        myTableView.bottomAnchor.constraint(equalTo:view.bottomAnchor).isActive = true
     }
 }
 
@@ -27,7 +38,9 @@ extension TestViewController{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
+        let cell: UITableViewCell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = items[indexPath.row]
         return cell
     }
 }
