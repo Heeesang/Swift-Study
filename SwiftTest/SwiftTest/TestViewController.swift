@@ -7,28 +7,29 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class TestViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     let myTableView: UITableView = UITableView()
     let items: [String] = ["곽희상", "swift", "ios"]
     
-    func configureTableView() {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchFilms()
         view.addSubview(myTableView)
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
         myTableView.translatesAutoresizingMaskIntoConstraints = false
-        myTableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
-        myTableView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
-        myTableView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
-        myTableView.bottomAnchor.constraint(equalTo:view.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            myTableView.topAnchor.constraint(equalTo:view.topAnchor),
+            myTableView.leftAnchor.constraint(equalTo:view.leftAnchor),
+            myTableView.rightAnchor.constraint(equalTo:view.rightAnchor),
+            myTableView.bottomAnchor.constraint(equalTo:view.bottomAnchor)
+        ])
+        
     }
 }
 
@@ -43,4 +44,17 @@ extension TestViewController{
         cell.textLabel?.text = items[indexPath.row]
         return cell
     }
+    
+    func fetchFilms() {
+        
+        let urlString = "https://randomuser.me/api/?results=1"
+        
+        AF
+            .request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
+            .responseDecodable(of: RandomUserResponse.self) {response in
+                guard case .success(let data) = response.result else {return}
+                print(data.results)
+            }
+      }
 }
+

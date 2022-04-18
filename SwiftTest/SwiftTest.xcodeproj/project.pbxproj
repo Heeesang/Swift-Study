@@ -12,6 +12,9 @@
 		0518084F280840FC00278FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0518084E280840FC00278FC2 /* Assets.xcassets */; };
 		05180852280840FC00278FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05180850280840FC00278FC2 /* LaunchScreen.storyboard */; };
 		0518085A2808418400278FC2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051808592808418400278FC2 /* TestViewController.swift */; };
+		058661CB280CF41A0036F9FF /* RandomUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058661CA280CF41A0036F9FF /* RandomUserResponse.swift */; };
+		058661CD280D09000036F9FF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058661CC280D09000036F9FF /* TestView.swift */; };
+		2ADAA74B0EBFA04922A335D2 /* Pods_SwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A181B6D5295C4AB7F6AA248 /* Pods_SwiftTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		05180851280840FC00278FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05180853280840FC00278FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		051808592808418400278FC2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		058661CA280CF41A0036F9FF /* RandomUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserResponse.swift; sourceTree = "<group>"; };
+		058661CC280D09000036F9FF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		189E10134E1D42E7FD2F409C /* Pods-SwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.release.xcconfig"; path = "Target Support Files/Pods-SwiftTest/Pods-SwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		7A181B6D5295C4AB7F6AA248 /* Pods_SwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E870B5DA7B5BC06526B36EA9 /* Pods-SwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTest/Pods-SwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADAA74B0EBFA04922A335D2 /* Pods_SwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				05180844280840FA00278FC2 /* SwiftTest */,
 				05180843280840FA00278FC2 /* Products */,
+				7182688B3FE1A31349417BE8 /* Pods */,
+				C7C11EF00397F1002853DD96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,41 @@
 		05180844280840FA00278FC2 /* SwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				058661C928091AAF0036F9FF /* Model */,
 				051808592808418400278FC2 /* TestViewController.swift */,
 				05180845280840FA00278FC2 /* AppDelegate.swift */,
 				05180847280840FA00278FC2 /* SceneDelegate.swift */,
 				0518084E280840FC00278FC2 /* Assets.xcassets */,
 				05180850280840FC00278FC2 /* LaunchScreen.storyboard */,
 				05180853280840FC00278FC2 /* Info.plist */,
+				058661CC280D09000036F9FF /* TestView.swift */,
 			);
 			path = SwiftTest;
+			sourceTree = "<group>";
+		};
+		058661C928091AAF0036F9FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				058661CA280CF41A0036F9FF /* RandomUserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7182688B3FE1A31349417BE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E870B5DA7B5BC06526B36EA9 /* Pods-SwiftTest.debug.xcconfig */,
+				189E10134E1D42E7FD2F409C /* Pods-SwiftTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7C11EF00397F1002853DD96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A181B6D5295C4AB7F6AA248 /* Pods_SwiftTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05180856280840FC00278FC2 /* Build configuration list for PBXNativeTarget "SwiftTest" */;
 			buildPhases = (
+				0048A02F53B49161F63CCFE7 /* [CP] Check Pods Manifest.lock */,
 				0518083E280840FA00278FC2 /* Sources */,
 				0518083F280840FA00278FC2 /* Frameworks */,
 				05180840280840FA00278FC2 /* Resources */,
+				93D1CB21D5A3BD5E9D10495D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +169,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0048A02F53B49161F63CCFE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D1CB21D5A3BD5E9D10495D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftTest/Pods-SwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0518083E280840FA00278FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				05180846280840FA00278FC2 /* AppDelegate.swift in Sources */,
+				058661CD280D09000036F9FF /* TestView.swift in Sources */,
+				058661CB280CF41A0036F9FF /* RandomUserResponse.swift in Sources */,
 				0518085A2808418400278FC2 /* TestViewController.swift in Sources */,
 				05180848280840FA00278FC2 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,6 +356,7 @@
 		};
 		05180857280840FC00278FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E870B5DA7B5BC06526B36EA9 /* Pods-SwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +383,7 @@
 		};
 		05180858280840FC00278FC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189E10134E1D42E7FD2F409C /* Pods-SwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
