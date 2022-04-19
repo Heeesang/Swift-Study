@@ -33,7 +33,7 @@ class TestViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func fetchFilms() {
         
-        let urlString = "https://randomuser.me/api/?results=3"
+        let urlString = "https://randomuser.me/api/?results=20"
         AF.request(urlString).responseJSON { (response) in
                     switch response.result {
                     case .success(let res):
@@ -60,7 +60,7 @@ extension TestViewController{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = dataSource[indexPath.row].name.title
+        cell.textLabel?.text = dataSource[indexPath.row].name.first
         return cell
     }
 }
