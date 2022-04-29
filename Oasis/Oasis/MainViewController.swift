@@ -39,7 +39,7 @@ class MainViewController: UIViewController{
         $0.setLeftPaddingPoints(30)
         $0.layer.shadowOffset = CGSize(width: 0, height: 0)
         $0.layer.shadowOpacity = 1
-        $0.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        $0.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.12).cgColor
         
     }
     
@@ -52,13 +52,14 @@ class MainViewController: UIViewController{
         $0.setLeftPaddingPoints(30)
         $0.layer.shadowOffset = CGSize(width: 0, height: 0)
         $0.layer.shadowOpacity = 1
-        $0.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        $0.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.12).cgColor
     }
     
     private let loginButton = UIButton().then() {
         $0.setTitle("Login", for: .normal)
+        $0.layer.cornerRadius = 27
+        $0.backgroundColor = UIColor(red: 0.9607, green: 0.7843, blue: 0.7882, alpha: 1)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -71,6 +72,7 @@ class MainViewController: UIViewController{
         view.addSubview(subTitlelabelView)
         view.addSubview(emailField)
         view.addSubview(passwordField)
+        view.addSubview(loginButton)
     }
     
     func setLayout(){
@@ -105,6 +107,13 @@ class MainViewController: UIViewController{
             $0.width.equalTo(289)
             $0.height.equalTo(51)
         }
+        
+        loginButton.snp.makeConstraints{
+            $0.centerX.equalTo(self.view)
+            $0.top.equalTo(passwordField.snp.bottom).offset(81)
+            $0.width.equalTo(289)
+            $0.height.equalTo(51)
+        }
     }
 }
 extension UITextField {
@@ -117,5 +126,23 @@ extension UITextField {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always
+    }
+}
+
+extension UIView {
+    func addGradient(
+        with colors: [CGColor],
+        locations: [NSNumber],
+        start: CGPoint = .init(x: 0.25, y: 0.5),
+        end: CGPoint = .init(x: 0.75, y: 1)
+    ){
+        let gradient = CAGradientLayer()
+        
+        gradient.colors = colors
+        gradient.startPoint = start
+        gradient.endPoint = end
+        gradient.locations = locations
+        gradient.frame = self.frame
+        layer.insertSublayer(gradient, at: 0)
     }
 }
