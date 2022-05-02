@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 import Then
+import Firebase
 
 class MainViewController: UIViewController{
     
@@ -30,7 +31,7 @@ class MainViewController: UIViewController{
         $0.font = UIFont.systemFont(ofSize: 11)
     }
     
-    private let emailField = UITextField().then() {
+    private var emailField = UITextField().then() {
         $0.placeholder = "아이디를 입력해주세요."
         $0.keyboardType = .emailAddress
         $0.layer.cornerRadius = 13
@@ -61,11 +62,20 @@ class MainViewController: UIViewController{
         $0.backgroundColor = UIColor(red: 0.9607, green: 0.7843, blue: 0.7882, alpha: 1)
     }
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = .white
-        addViews()
-        setLayout()
-    }
+           super.viewDidLoad()
+           // Do any additional setup after loading the view.
+       }
+
+       func tapLogin(_ sender: Any) {
+       }
+       func tapSignUp(_ sender: Any) {
+   //            m_id.text
+   //            m_pwd.text
+           Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { authResult, error in
+             // ...
+               print(authResult)
+           }
+       }
     func addViews(){
         view.addSubview(imageView)
         view.addSubview(titlelabelView)

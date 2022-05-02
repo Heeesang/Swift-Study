@@ -14,6 +14,7 @@
 		0599B46F2819358400EC32DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599B46E2819358400EC32DC /* MainViewController.swift */; };
 		0599B472281981FC00EC32DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0599B471281981FC00EC32DC /* SnapKit */; };
 		0599B4752819822400EC32DC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0599B4742819822400EC32DC /* Then */; };
+		05C339DC281F7CF7007A509E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C339DB281F7CF7007A509E /* GoogleService-Info.plist */; };
 		21F9F20CE7FC3F9ADB54483E /* Pods_Oasis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AFC50569FF45A08E2A94F1 /* Pods_Oasis.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0599B4662819343200EC32DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0599B4682819343200EC32DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0599B46E2819358400EC32DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05C339DB281F7CF7007A509E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E9B17D50A3500A67671E9B8 /* Pods-Oasis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis.debug.xcconfig"; path = "Target Support Files/Pods-Oasis/Pods-Oasis.debug.xcconfig"; sourceTree = "<group>"; };
 		4EA10AD209C680C05DA33530 /* Pods-Oasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis.release.xcconfig"; path = "Target Support Files/Pods-Oasis/Pods-Oasis.release.xcconfig"; sourceTree = "<group>"; };
 		B7AFC50569FF45A08E2A94F1 /* Pods_Oasis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oasis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 		0599B4592819343000EC32DC /* Oasis */ = {
 			isa = PBXGroup;
 			children = (
+				05C339DB281F7CF7007A509E /* GoogleService-Info.plist */,
 				0599B45A2819343000EC32DC /* AppDelegate.swift */,
 				0599B45C2819343000EC32DC /* SceneDelegate.swift */,
 				0599B46E2819358400EC32DC /* MainViewController.swift */,
@@ -89,7 +92,6 @@
 				4E9B17D50A3500A67671E9B8 /* Pods-Oasis.debug.xcconfig */,
 				4EA10AD209C680C05DA33530 /* Pods-Oasis.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,7 +146,7 @@
 			);
 			mainGroup = 0599B44E2819342F00EC32DC;
 			packageReferences = (
-				0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit" */,
 				0599B4732819822400EC32DC /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 0599B4582819343000EC32DC /* Products */;
@@ -163,6 +165,7 @@
 			files = (
 				0599B4672819343200EC32DC /* LaunchScreen.storyboard in Resources */,
 				0599B4642819343200EC32DC /* Assets.xcassets in Resources */,
+				05C339DC281F7CF7007A509E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +432,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -450,7 +453,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		0599B471281981FC00EC32DC /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = 0599B470281981FC00EC32DC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 		0599B4742819822400EC32DC /* Then */ = {
