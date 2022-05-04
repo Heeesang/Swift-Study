@@ -10,11 +10,10 @@
 		0599B45B2819343000EC32DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599B45A2819343000EC32DC /* AppDelegate.swift */; };
 		0599B45D2819343000EC32DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599B45C2819343000EC32DC /* SceneDelegate.swift */; };
 		0599B4642819343200EC32DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0599B4632819343200EC32DC /* Assets.xcassets */; };
-		0599B4672819343200EC32DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0599B4652819343200EC32DC /* LaunchScreen.storyboard */; };
 		0599B46F2819358400EC32DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599B46E2819358400EC32DC /* MainViewController.swift */; };
 		0599B472281981FC00EC32DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0599B471281981FC00EC32DC /* SnapKit */; };
 		0599B4752819822400EC32DC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0599B4742819822400EC32DC /* Then */; };
-		05C339DC281F7CF7007A509E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C339DB281F7CF7007A509E /* GoogleService-Info.plist */; };
+		05C339E2282172FC007A509E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C339E1282172FC007A509E /* GoogleService-Info.plist */; };
 		21F9F20CE7FC3F9ADB54483E /* Pods_Oasis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AFC50569FF45A08E2A94F1 /* Pods_Oasis.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,10 +22,9 @@
 		0599B45A2819343000EC32DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0599B45C2819343000EC32DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0599B4632819343200EC32DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0599B4662819343200EC32DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0599B4682819343200EC32DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0599B46E2819358400EC32DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		05C339DB281F7CF7007A509E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05C339E1282172FC007A509E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E9B17D50A3500A67671E9B8 /* Pods-Oasis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis.debug.xcconfig"; path = "Target Support Files/Pods-Oasis/Pods-Oasis.debug.xcconfig"; sourceTree = "<group>"; };
 		4EA10AD209C680C05DA33530 /* Pods-Oasis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis.release.xcconfig"; path = "Target Support Files/Pods-Oasis/Pods-Oasis.release.xcconfig"; sourceTree = "<group>"; };
 		B7AFC50569FF45A08E2A94F1 /* Pods_Oasis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oasis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,15 +65,38 @@
 		0599B4592819343000EC32DC /* Oasis */ = {
 			isa = PBXGroup;
 			children = (
-				05C339DB281F7CF7007A509E /* GoogleService-Info.plist */,
-				0599B45A2819343000EC32DC /* AppDelegate.swift */,
-				0599B45C2819343000EC32DC /* SceneDelegate.swift */,
-				0599B46E2819358400EC32DC /* MainViewController.swift */,
-				0599B4632819343200EC32DC /* Assets.xcassets */,
-				0599B4652819343200EC32DC /* LaunchScreen.storyboard */,
-				0599B4682819343200EC32DC /* Info.plist */,
+				05C339DF28216E0A007A509E /* Resource */,
+				05C339DE28216DEF007A509E /* VC */,
+				05C339DD28216DA0007A509E /* App */,
 			);
 			path = Oasis;
+			sourceTree = "<group>";
+		};
+		05C339DD28216DA0007A509E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0599B45A2819343000EC32DC /* AppDelegate.swift */,
+				0599B45C2819343000EC32DC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		05C339DE28216DEF007A509E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0599B46E2819358400EC32DC /* MainViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		05C339DF28216E0A007A509E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0599B4632819343200EC32DC /* Assets.xcassets */,
+				05C339E1282172FC007A509E /* GoogleService-Info.plist */,
+				0599B4682819343200EC32DC /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		4524833F3506A95D03A1CAE7 /* Frameworks */ = {
@@ -163,9 +184,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0599B4672819343200EC32DC /* LaunchScreen.storyboard in Resources */,
 				0599B4642819343200EC32DC /* Assets.xcassets in Resources */,
-				05C339DC281F7CF7007A509E /* GoogleService-Info.plist in Resources */,
+				05C339E2282172FC007A509E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,17 +245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0599B4652819343200EC32DC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0599B4662819343200EC32DC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0599B4692819343200EC32DC /* Debug */ = {
@@ -360,8 +369,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F83UCL3G4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Oasis/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -373,8 +384,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swif.Oasis;
+				PRODUCT_BUNDLE_IDENTIFIER = "ioslogin-c64fc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,8 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F83UCL3G4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Oasis/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -400,8 +414,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.swif.Oasis;
+				PRODUCT_BUNDLE_IDENTIFIER = "ioslogin-c64fc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
