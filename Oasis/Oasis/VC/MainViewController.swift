@@ -3,7 +3,6 @@ import UIKit
 import SnapKit
 import Then
 import Firebase
-import FirebaseDatabase
 
 class MainViewController: UIViewController{
     
