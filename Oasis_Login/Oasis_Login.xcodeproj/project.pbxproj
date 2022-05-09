@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E47EEA28295300007E6E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E47EE928295300007E6E46 /* AppDelegate.swift */; };
+		05E47EEC28295300007E6E46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E47EEB28295300007E6E46 /* SceneDelegate.swift */; };
+		05E47EF328295304007E6E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E47EF228295304007E6E46 /* Assets.xcassets */; };
+		05E47EF628295304007E6E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E47EF428295304007E6E46 /* LaunchScreen.storyboard */; };
+		05E47EFE28295379007E6E46 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E47EFD28295379007E6E46 /* MainVC.swift */; };
+		05E47F0028295710007E6E46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05E47EFF28295710007E6E46 /* GoogleService-Info.plist */; };
+		846DBB55AF39E5E1E748F3DE /* Pods_Oasis_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282F1FB05E9CA54A0547074F /* Pods_Oasis_Login.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05E47EE628295300007E6E46 /* Oasis_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oasis_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E47EE928295300007E6E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05E47EEB28295300007E6E46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05E47EF228295304007E6E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05E47EF528295304007E6E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05E47EF728295304007E6E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E47EFD28295379007E6E46 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		05E47EFF28295710007E6E46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		282F1FB05E9CA54A0547074F /* Pods_Oasis_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oasis_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D4C4E5C07775D7C4B6F05F /* Pods-Oasis_Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis_Login.release.xcconfig"; path = "Target Support Files/Pods-Oasis_Login/Pods-Oasis_Login.release.xcconfig"; sourceTree = "<group>"; };
+		67C617C9D1A920965EC4C854 /* Pods-Oasis_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oasis_Login.debug.xcconfig"; path = "Target Support Files/Pods-Oasis_Login/Pods-Oasis_Login.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05E47EE3282952FF007E6E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846DBB55AF39E5E1E748F3DE /* Pods_Oasis_Login.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E47EDD282952FF007E6E46 = {
+			isa = PBXGroup;
+			children = (
+				05E47EE828295300007E6E46 /* Oasis_Login */,
+				05E47EE728295300007E6E46 /* Products */,
+				BFECA81A03F9C8CFA97D3C62 /* Pods */,
+				C49836F42503D1D172EC3D23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05E47EE728295300007E6E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05E47EE628295300007E6E46 /* Oasis_Login.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05E47EE828295300007E6E46 /* Oasis_Login */ = {
+			isa = PBXGroup;
+			children = (
+				05E47EE928295300007E6E46 /* AppDelegate.swift */,
+				05E47EEB28295300007E6E46 /* SceneDelegate.swift */,
+				05E47EF228295304007E6E46 /* Assets.xcassets */,
+				05E47EF428295304007E6E46 /* LaunchScreen.storyboard */,
+				05E47EFF28295710007E6E46 /* GoogleService-Info.plist */,
+				05E47EF728295304007E6E46 /* Info.plist */,
+				05E47EFD28295379007E6E46 /* MainVC.swift */,
+			);
+			path = Oasis_Login;
+			sourceTree = "<group>";
+		};
+		BFECA81A03F9C8CFA97D3C62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67C617C9D1A920965EC4C854 /* Pods-Oasis_Login.debug.xcconfig */,
+				43D4C4E5C07775D7C4B6F05F /* Pods-Oasis_Login.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C49836F42503D1D172EC3D23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282F1FB05E9CA54A0547074F /* Pods_Oasis_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05E47EE5282952FF007E6E46 /* Oasis_Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E47EFA28295304007E6E46 /* Build configuration list for PBXNativeTarget "Oasis_Login" */;
+			buildPhases = (
+				C179A7D1A669AD67063D6868 /* [CP] Check Pods Manifest.lock */,
+				05E47EE2282952FF007E6E46 /* Sources */,
+				05E47EE3282952FF007E6E46 /* Frameworks */,
+				05E47EE4282952FF007E6E46 /* Resources */,
+				4B51D15334FEF865EB69702A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oasis_Login;
+			productName = Oasis_Login;
+			productReference = 05E47EE628295300007E6E46 /* Oasis_Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05E47EDE282952FF007E6E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					05E47EE5282952FF007E6E46 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 05E47EE1282952FF007E6E46 /* Build configuration list for PBXProject "Oasis_Login" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05E47EDD282952FF007E6E46;
+			productRefGroup = 05E47EE728295300007E6E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05E47EE5282952FF007E6E46 /* Oasis_Login */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05E47EE4282952FF007E6E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E47EF628295304007E6E46 /* LaunchScreen.storyboard in Resources */,
+				05E47EF328295304007E6E46 /* Assets.xcassets in Resources */,
+				05E47F0028295710007E6E46 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B51D15334FEF865EB69702A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oasis_Login/Pods-Oasis_Login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oasis_Login/Pods-Oasis_Login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Oasis_Login/Pods-Oasis_Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C179A7D1A669AD67063D6868 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oasis_Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05E47EE2282952FF007E6E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E47EEA28295300007E6E46 /* AppDelegate.swift in Sources */,
+				05E47EFE28295379007E6E46 /* MainVC.swift in Sources */,
+				05E47EEC28295300007E6E46 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05E47EF428295304007E6E46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05E47EF528295304007E6E46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05E47EF828295304007E6E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05E47EF928295304007E6E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05E47EFB28295304007E6E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C617C9D1A920965EC4C854 /* Pods-Oasis_Login.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Oasis_Login/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swif.Oasis-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05E47EFC28295304007E6E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D4C4E5C07775D7C4B6F05F /* Pods-Oasis_Login.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Oasis_Login/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swif.Oasis-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05E47EE1282952FF007E6E46 /* Build configuration list for PBXProject "Oasis_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E47EF828295304007E6E46 /* Debug */,
+				05E47EF928295304007E6E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E47EFA28295304007E6E46 /* Build configuration list for PBXNativeTarget "Oasis_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E47EFB28295304007E6E46 /* Debug */,
+				05E47EFC28295304007E6E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05E47EDE282952FF007E6E46 /* Project object */;
+}
