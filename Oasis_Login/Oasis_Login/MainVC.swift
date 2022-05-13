@@ -55,6 +55,12 @@ class MainVC: UIViewController{
         $0.backgroundColor = UIColor(red: 0.9607, green: 0.7843, blue: 0.7882, alpha: 1)
         $0.addTarget(self, action: #selector(tapSignIn), for: .touchUpInside )
     }
+    
+    private let signinButton = UIButton().then() {
+        $0.setTitle("회원가입", for: .normal)
+        $0.setTitleColor(.red, for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -70,6 +76,7 @@ class MainVC: UIViewController{
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
+        view.addSubview(signinButton)
     }
     
     func setLayout(){
@@ -111,11 +118,18 @@ class MainVC: UIViewController{
             $0.width.equalTo(289)
             $0.height.equalTo(51)
         }
+        
+        signinButton.snp.makeConstraints{
+            $0.centerX.equalTo(self.view)
+            $0.top.equalTo(loginButton.snp.bottom)
+            $0.width.equalTo(289)
+            $0.height.equalTo(51)
+        }
     }
     @objc func tapSignIn(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if user != nil{
-                print("섹스!")
+                print("tldl")
             }
             else{
                 print("fuckwith 내눙과키상이양")
